@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Symfony 3 template">
+
+    <title>Symfony 3 base app</title>
+
+    {# Bootstrap core CSS #}
+    <link href="{{ asset('/components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+
+    {# Project's custom CSS #}
+    <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Symfony template</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=href="{{ path('easyadmin') }}">Dashboard</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Congrats</h1>
+        <p class="lead">Your Symfony base project seems to be ready !</p>
+        <p class="lead"><a href="{{ path('easyadmin') }}">Link to admin dashboard</a></p>
+    </div>
+
+</div><!-- /.container -->
+
+{% block body %}
+{% endblock %}
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('/components/jquery/dist/jquery.slim.min.js') }}"></script>
+<script>window.jQuery || document.write('<script src="{{ asset('/components/jquery/dist/jquery.min.js') }}"><\/script>')</script>
+
+<script src="{{ asset('/components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

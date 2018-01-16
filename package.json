@@ -1,0 +1,14 @@
+{
+  "name": "symf-tmp",
+  "version": "1.0.0",
+  "description": "symfony template",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "kyle hazan",
+  "license": "MIT"
+}
